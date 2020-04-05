@@ -1,0 +1,2122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<title>ワールドカップで初戦は本当に重要なのか？</title>
+<link rel="stylesheet" type="text/css" href="../csstemplate/style.css">
+</head>
+
+<body id="INDEX">
+
+<div id="PAGETOP">
+
+
+<!--================-->
+<!--Header-->
+<!--================-->
+
+<div id="HEADER">
+
+<h1>日本語</h1>
+<!--
+<ul id="PAN">
+   <li>index</li>
+ </ul>
+ -->
+</div>
+<hr>
+
+
+<!--================-->
+<!--Menu-->
+<!--================-->
+<div id="MENU">
+
+<h2>Menu</h2>
+ <ul>
+   <li id="MENU01"><a href="../index.html">Index</a></li>
+   <li id="MENU02"><a href="../CV/index.html">CV</a></li>
+   <li id="MENU03"><a href="../research/index.html">Research</a></li>
+   <li id="MENU04"><a href="../teaching/index.html">Teaching</a></li>
+   <li id="MENU05" class="menu-on"><a href="index.html">Japanese</a></li>
+  </ul>
+
+</div>
+<hr>
+
+
+<!--================-->
+<!--Body -->
+<!--================-->
+
+<div id="Article">
+
+
+<h2>ワールドカップで初戦は本当に重要なのか？ (2018年版) [2018.7.6]</h2>
+<div class="text">
+
+[2018.7.4 ベスト8決定の翌日 執筆]
+[2018.7.6 ベスト8初戦当日 細かい表現を修正]
+
+<h3>気が付いたら4年が経っていた</h3>
+
+4年に一度のお祭り、FIFA World Cupが今年も6月から開催され連日連夜の熱戦に寝不足気味の人も多い…かどうか分からないが、少なくとも私はこりもせず寝不足気味である。何はともあれ、今大会のデータも出揃ったのでそれを用いて初戦の重要性を検証してみようと思う。何故わざわざここで検証をしようかと思ったかについては<a href="WC.html">4年前のエッセー</a>を参照していただきたい。
+
+<h3>前回の続き</h3>
+というわけで、FIFAの公式サイト(および便利だったので部分的にwikipedia)のデータを使って実際に検証してみた。まずは前回同様グループリーグの勝ち抜け率を比較するという単純なやり方でとりあえずやってみることにする。具体的には32チーム制になった1998、2002、2006、2010、2014、そしてグループステージが終わったばかりの2018の6大会でそれぞれ本戦に出場した32チーム(計32*6=192チーム)のうち、条件に当てはまる(例: グループリーグ初戦で負けた)チームのグループ突破の結果について検証する。以後グループリーグを突破することを``Advancing"、グループリーグで敗退することを``Eliminated"と呼ぶことにする(「勝ち」「負け」は1試合での勝ち、負けを意味するとする)。Advancingする確率を以後AR(Advancing Rate)、二つのARの差をARD(AR Difference)と呼ぶことにする。
+
+結論から言うと、定性的には前回から結果は全く変わらなかった。要するに
+<b>「初戦でPot1チームに引き分けたチーム」のARは「2戦目でPot1チームに引き分けたチーム」のARよりも(10%水準で)有意に高いが</b>
+それ以外は相変わらず<b>統計的に優位なARの差があるとは言えない</b>。
+
+
+<h4>相関の確認</h4>
+本題に入る前に各試合の相関関係を示しておく。
+<ul>
+    <li>「1試合目の勝点」と「「2試合目の勝点」」の相関係数: 0.258</li>
+    <li>「1試合目の勝点」と「「3試合目の勝点」」の相関係数: 0.109</li>
+    <li>「2試合目の勝点」と「「3試合目の勝点」」の相関係数: 0.048</li>
+</ul>
+    <table border=1 align=center>
+ <caption>1戦目と2戦目の結果の分布</caption>
+ <tr align=center>
+  <td rowspan="2" colspan="2"></td>
+  <td colspan="4">2戦目</td>
+ </tr>
+ <tr align=center>
+  <td>Win</td>
+  <td>Draw</td>
+  <td>Lose</td>
+  <td>Total</td>
+ </tr>
+ <tr align=center>
+  <td rowspan="4">1戦目</td>
+  <td>Win</td>
+  <td>35</td>
+  <td>22</td>
+  <td>16</td>
+  <td>73</td>
+ </tr>
+ <tr align=center>
+  <td>Draw</td>
+  <td>18</td>
+  <td>12</td>
+  <td>16</td>
+  <td>46</td>
+ </tr>
+ <tr align=center>
+  <td>Lose</td>
+  <td>17</td>
+  <td>18</td>
+  <td>38</td>
+  <td>73</td>
+ </tr>
+ <tr align=center>
+  <td>Total</td>
+  <td>70</td>
+  <td>52</td>
+  <td>70</td>
+  <td>192</td>
+ </tr>
+</table>
+
+<h4>総数比較</h4>
+単純に「初戦で負け」と「2戦目で負け」のチームのうちそれぞれAdvancingしたチーム数とEliminatedしたチーム数とARの比較、同様に「初戦で引き分け」と「2戦目で引き分け」の比較と「初戦で勝ち」と「2戦目で勝ち」の比較を行う。以後、「初戦の結果が2戦目の結果に比べてグループ突破に影響を与えるかどうか」の指標として「2戦目で負けたチームのAR」から「初戦で負けたチームのAR」を引いたARD、および「初戦で勝ったチームのAR」から「2戦目で勝ったチームのAR」を引いたARDをFME(First Match Effect)と呼ぶことにする。またARDがゼロ(つまり二つのARが同じ)であることを統計的に10%優位水準で棄却できる領域も示している。
+
+
+<table border=1 align=center>
+<tr>
+<td>
+<table border=1 align=center>
+ <caption>初戦で負けたチームと2戦目で負けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で負け</td>
+  <td colspan="3">2戦目で負け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>0</td>
+  <td>11</td>
+  <td></td>
+  <td>1</td>
+  <td>9</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>1</td>
+  <td>11</td>
+  <td></td>
+  <td>2</td>
+  <td>8</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>2</td>
+  <td>11</td>
+  <td></td>
+  <td>1</td>
+  <td>11</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>1</td>
+  <td>9</td>
+  <td></td>
+  <td>4</td>
+  <td>8</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>3</td>
+  <td>11</td>
+  <td></td>
+  <td>1</td>
+  <td>11</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+	<td>2018</td>
+	<td>1</td>
+	<td>12</td>
+	<td></td>
+	<td>2</td>
+	<td>12</td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>8</td>
+  <td>65</td>
+  <td>0.110</td>
+  <td>11</td>
+  <td>59</td>
+  <td>0.157</td>
+ </tr>
+</table>
+FME: 0.048
+<br>
+10%棄却域臨界値: &plusmn; 0.093
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>初戦で引き分けたチームと2戦目で引き分けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で引き分け</td>
+  <td colspan="3">2戦目で引き分け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>5</td>
+  <td>5</td>
+  <td></td>
+  <td>7</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>6</td>
+  <td>2</td>
+  <td></td>
+  <td>8</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>3</td>
+  <td>3</td>
+  <td></td>
+  <td>3</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>7</td>
+  <td>5</td>
+  <td></td>
+  <td>3</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>5</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>5</td>
+  <td>1</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+
+ <tr align=center>
+  <td>total</td>
+  <td>27</td>
+  <td>19</td>
+  <td>0.587</td>
+  <td>28</td>
+  <td>24</td>
+  <td>0.538</td>
+ </tr>
+</table>
+ARD: -0.048
+<br>
+10%棄却域臨界値: &plusmn; 0.165
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>初戦で勝ったチームと2戦目で勝ったチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で勝ち</td>
+  <td colspan="3">2戦目で勝ち</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>11</td>
+  <td>0</td>
+  <td></td>
+  <td>8</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>9</td>
+  <td>3</td>
+  <td></td>
+  <td>6</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>11</td>
+  <td>2</td>
+  <td></td>
+  <td>12</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>8</td>
+  <td>2</td>
+  <td></td>
+  <td>9</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>12</td>
+  <td>2</td>
+  <td></td>
+  <td>10</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>10</td>
+  <td>3</td>
+  <td></td>
+  <td>12</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>61</td>
+  <td>12</td>
+  <td>0.836</td>
+  <td>57</td>
+  <td>13</td>
+  <td>0.814</td>
+ </tr>
+</table>
+FME: 0.021
+<br>
+10%棄却域臨界値: &plusmn; 0.105
+</td>
+</tr>
+</table>
+
+
+<h4>対戦相手の強さを考慮するとどうなるか</h4>
+強さの指標として本戦のグループ抽選の際にシードとして扱われるPot1の8チーム(開催国および何らかの基準によるトップ7チーム、なお1998年と2002年は前回優勝国もここに含まれる)かどうかを相対的な強さの指標とし、対戦相手がPot1チームかどうかで更に場合わけをして以下の6種類の比較を行った。
+
+<table border=1 align=center>
+<tr>
+<td>
+<table border=1 align=center>
+ <caption>初戦でPot1チームに負けたチームと2戦目でPot1チームに負けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で負け</td>
+  <td colspan="3">2戦目で負け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>0</td>
+  <td>5</td>
+  <td></td>
+  <td>1</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>1</td>
+  <td>5</td>
+  <td></td>
+  <td>1</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>2</td>
+  <td>5</td>
+  <td></td>
+  <td>1</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>0</td>
+  <td>4</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>2</td>
+  <td>4</td>
+  <td></td>
+  <td>0</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>0</td>
+  <td>3</td>
+  <td></td>
+  <td>1</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>5</td>
+  <td>26</td>
+  <td>0.161</td>
+  <td>6</td>
+  <td>22</td>
+  <td>0.214</td>
+ </tr>
+</table>
+FME: 0.053
+<br>
+10%棄却域臨界値: &plusmn; 0.167
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>初戦でPot1チームに引き分けたチームと2戦目でPot1チームに引き分けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で引き分け</td>
+  <td colspan="3">2戦目で引き分け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+  <td>2</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>1</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>1</td>
+  <td>0</td>
+  <td></td>
+  <td>0</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>3</td>
+  <td>0</td>
+  <td></td>
+  <td>0</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>0</td>
+  <td>0</td>
+  <td></td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>2</td>
+  <td>1</td>
+  <td></td>
+  <td>0</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>8</td>
+  <td>2</td>
+  <td>0.8</td>
+  <td>5</td>
+  <td>7</td>
+  <td>0.417</td>
+ </tr>
+</table>
+ARD: -0.383
+<br>
+10%棄却域臨界値: &plusmn; 0.346
+(5%棄却域臨界値: &plusmn; 0.413)
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>初戦でPot1チームに勝ったチームと2戦目でPot1チームに勝ったチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で勝ち</td>
+  <td colspan="3">2戦目で勝ち</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>1</td>
+  <td>0</td>
+  <td></td>
+  <td>0</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>1</td>
+  <td>0</td>
+  <td></td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>0</td>
+  <td>0</td>
+  <td></td>
+  <td>0</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>0</td>
+  <td>1</td>
+  <td></td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>2</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+  <td>2</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>5</td>
+  <td>2</td>
+  <td>0.714</td>
+  <td>6</td>
+  <td>2</td>
+  <td>0.75</td>
+ </tr>
+</table>
+FME: -0.035
+<br>
+10%棄却域臨界値: &plusmn; 0.376
+</td>
+</tr>
+</table>
+
+
+<br>
+<table border=1 align=center>
+<tr>
+<td>
+<table border=1 align=center>
+ <caption>初戦でPot1ではないチームに負けたチームと2戦目でPot1ではないチームに負けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で負け</td>
+  <td colspan="3">2戦目で負け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>0</td>
+  <td>6</td>
+  <td></td>
+  <td>0</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>0</td>
+  <td>6</td>
+  <td></td>
+  <td>1</td>
+  <td>6</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>0</td>
+  <td>6</td>
+  <td></td>
+  <td>0</td>
+  <td>7</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>1</td>
+  <td>5</td>
+  <td></td>
+  <td>2</td>
+  <td>6</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>1</td>
+  <td>7</td>
+  <td></td>
+  <td>1</td>
+  <td>7</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>1</td>
+  <td>9</td>
+  <td></td>
+  <td>1</td>
+  <td>7</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>3</td>
+  <td>39</td>
+  <td>0.071</td>
+  <td>5</td>
+  <td>37</td>
+  <td>0.119</td>
+ </tr>
+</table>
+FME: 0.048
+<br>
+10%棄却域臨界値: &plusmn; 0.105
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>初戦でPot1ではないチームに引き分けたチームと2戦目でPot1ではないチームに引き分けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で引き分け</td>
+  <td colspan="3">2戦目で引き分け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>4</td>
+  <td>4</td>
+  <td></td>
+  <td>5</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>5</td>
+  <td>2</td>
+  <td></td>
+  <td>6</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>2</td>
+  <td>3</td>
+  <td></td>
+  <td>3</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>4</td>
+  <td>5</td>
+  <td></td>
+  <td>3</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>3</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>19</td>
+  <td>17</td>
+  <td>0.528</td>
+  <td>23</td>
+  <td>17</td>
+  <td>0.575</td>
+ </tr>
+</table>
+ARD: 0.047
+<br>
+10%棄却域臨界値: &plusmn; 0.188
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>初戦でPot1ではないチームに勝ったチームと2戦目でPot1ではないチームに勝ったチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で勝ち</td>
+  <td colspan="3">2戦目で勝ち</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>10</td>
+  <td>0</td>
+  <td></td>
+  <td>8</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>8</td>
+  <td>3</td>
+  <td></td>
+  <td>5</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>11</td>
+  <td>2</td>
+  <td></td>
+  <td>12</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>8</td>
+  <td>1</td>
+  <td></td>
+  <td>8</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>10</td>
+  <td>2</td>
+  <td></td>
+  <td>8</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>9</td>
+  <td>2</td>
+  <td></td>
+  <td>10</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>56</td>
+  <td>10</td>
+  <td>0.848</td>
+  <td>51</td>
+  <td>11</td>
+  <td>0.823</td>
+ </tr>
+</table>
+FME: 0.026
+<br>
+10%棄却域臨界値: &plusmn; 0.108
+</td>
+</tr>
+</table>
+
+<br>
+<table border=1 align=center>
+<tr><td>
+<table border=1 align=center>
+ <caption>(参考)初戦でPot1チームに引き分けたチームと2戦目でPot1チームに引き分けたチーム(カッコ内は、Pot1の相手、最終勝点、グループ内最終順位、およびトーナメント結果)
+</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="2">初戦で引き分け</td>
+  <td colspan="2">2戦目で引き分け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>Chile(Italy, 3, 2nd, R16)</td>
+  <td>Belgium(Netherlands, 3, 3rd)</td>
+  <td>Paraguay(Spain, 5, 2nd, R16), Yugoslavia(Germany, 7, 2nd, R16)</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>Belgium(Japan, 5, 2nd, R16)</td>
+  <td></td>
+  <td>USA(South Korea, 4, 2nd, QF), Ireland(Germany, 5, 2nd, R16)</td>
+  <td>Uruguay(France, 2, 3rd)</td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>Switzerland(France, 7, 1st, R16)</td>
+  <td></td>
+  <td></td>
+  <td>Angola(Mexico, 2, 3rd), USA(Italy, 1, 4th), South Korea(France, 4, 3rd)</td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>Mexico(South Africa, 4, 2nd, R16), USA(England, 5, 1st, R16), Paraguay(Italy, 5, 1st, QF)</td>
+  <td></td>
+  <td></td>
+  <td>Algeria(England, 1, 4th), New Zealand(Italy, 3, 3rd)</td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td></td>
+  <td></td>
+  <td>Mexico(Brazil, 7, 2nd, R16)</td>
+  <td>Ghana(Germany, 1, 4th)</td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>Spain(Portugal, 5, 1st, R16), Switzerland(Brazil, 5, 2nd, R16)</td>
+  <td>Iceland(Argentina, 1, 4th)</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+</td></tr>
+</table>
+
+<h4>弱いチームだとどうか</h4>
+サンプルをPot1ではないチームに限定した比較は以下の通り。
+
+<table border=1 align=center>
+<tr>
+<td>
+<table border=1 align=center>
+ <caption>Pot1ではないチームのうち<br>初戦で負けたチームと2戦目で負けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で負け</td>
+  <td colspan="3">2戦目で負け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>0</td>
+  <td>10</td>
+  <td></td>
+  <td>1</td>
+  <td>9</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>1</td>
+  <td>10</td>
+  <td></td>
+  <td>1</td>
+  <td>7</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>2</td>
+  <td>11</td>
+  <td></td>
+  <td>1</td>
+  <td>11</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>0</td>
+  <td>9</td>
+  <td></td>
+  <td>3</td>
+  <td>7</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>2</td>
+  <td>10</td>
+  <td></td>
+  <td>0</td>
+  <td>10</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>1</td>
+  <td>10</td>
+  <td></td>
+  <td>1</td>
+  <td>11</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>6</td>
+  <td>60</td>
+  <td>0.091</td>
+  <td>7</td>
+  <td>55</td>
+  <td>0.113</td>
+ </tr>
+</table>
+FME: 0.0213
+<br>
+10%棄却域臨界値: &plusmn; 0.088
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>Pot1ではないチームのうち<br>初戦で引き分けたチームと2戦目で引き分けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で引き分け</td>
+  <td colspan="3">2戦目で引き分け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>3</td>
+  <td>5</td>
+  <td></td>
+  <td>6</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>5</td>
+  <td>2</td>
+  <td></td>
+  <td>6</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>2</td>
+  <td>3</td>
+  <td></td>
+  <td>1</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>6</td>
+  <td>3</td>
+  <td></td>
+  <td>2</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>3</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>2</td>
+  <td>1</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>19</td>
+  <td>17</td>
+  <td>0.528</td>
+  <td>20</td>
+  <td>21</td>
+  <td>0.488</td>
+ </tr>
+</table>
+ADR: -0.040
+<br>
+10%棄却域臨界値: &plusmn; 0.188
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>Pot1ではないチームのうち<br>初戦で勝ったチームと2戦目で勝ったチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で勝ち</td>
+  <td colspan="3">2戦目で勝ち</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>6</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+  <td>3</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+  <td>6</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+  <td>5</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>6</td>
+  <td>2</td>
+  <td></td>
+  <td>6</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>7</td>
+  <td>3</td>
+  <td></td>
+  <td>7</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>31</td>
+  <td>11</td>
+  <td>0.738</td>
+  <td>29</td>
+  <td>12</td>
+  <td>0.707</td>
+ </tr>
+</table>
+FME: 0.031
+<br>
+10%棄却域臨界値: &plusmn; 0.162
+</td>
+</tr>
+</table>
+
+
+
+<br>
+
+<table border=1 align=center>
+<tr>
+<td>
+<table border=1 align=center>
+ <caption>Pot1ではないチームのうち<br>初戦でPot1ではないチームに負けたチームと2戦目でPot1ではないチームに負けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で負け</td>
+  <td colspan="3">2戦目で負け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>0</td>
+  <td>5</td>
+  <td></td>
+  <td>0</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>0</td>
+  <td>5</td>
+  <td></td>
+  <td>0</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>0</td>
+  <td>6</td>
+  <td></td>
+  <td>0</td>
+  <td>7</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>0</td>
+  <td>5</td>
+  <td></td>
+  <td>1</td>
+  <td>5</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>0</td>
+  <td>6</td>
+  <td></td>
+  <td>0</td>
+  <td>6</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>1</td>
+  <td>7</td>
+  <td></td>
+  <td>0</td>
+  <td>6</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>1</td>
+  <td>34</td>
+  <td>0.029</td>
+  <td>1</td>
+  <td>33</td>
+  <td>0.030</td>
+ </tr>
+</table>
+FME: 0.000
+<br>
+10%棄却域臨界値: &plusmn; 0.066
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>Pot1ではないチームのうち<br>
+ 初戦でPot1ではないチームに引き分けたチームと2戦目でPot1ではないチームに引き分けたチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で引き分け</td>
+  <td colspan="3">2戦目で引き分け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>2</td>
+  <td>4</td>
+  <td></td>
+  <td>4</td>
+  <td>4</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>1</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>3</td>
+  <td>3</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>0</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>11</td>
+  <td>15</td>
+  <td>0.423</td>
+  <td>15</td>
+  <td>14</td>
+  <td>0.517</td>
+ </tr>
+</table>
+ADR: 0.094
+<br>
+10%棄却域臨界値: &plusmn; 0.222
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>Pot1ではないチームのうち<br>
+ 初戦でPot1ではないチームに勝ったチームと2戦目でPot1ではないチームに勝ったチーム</caption>
+ <tr align=center>
+  <td></td>
+  <td colspan="3">初戦で勝ち</td>
+  <td colspan="3">2戦目で勝ち</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>5</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>3</td>
+  <td>2</td>
+  <td></td>
+  <td>2</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+  <td>6</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>4</td>
+  <td>1</td>
+  <td></td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+  <td>4</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>6</td>
+  <td>2</td>
+  <td></td>
+  <td>5</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>26</td>
+  <td>9</td>
+  <td>0.743</td>
+  <td>23</td>
+  <td>10</td>
+  <td>0.697</td>
+ </tr>
+</table>
+FME: 0.046
+<br>
+10%棄却域臨界値: &plusmn; 0.179
+</td>
+</tr>
+</table>
+
+<h4>ついでに</h4>
+1戦目と2戦目の結果をひっくり返した場合の比較は以下の通り。
+
+
+<table border=1 align=center>
+<tr>
+<td>
+<table border=1 align=center>
+ <caption>1戦目と2戦目が引き分けと負けのチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で負け</td>
+  <td colspan="3">初戦で引き分け</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>0</td>
+  <td>3</td>
+  <td></td>
+  <td>0</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>1</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>0</td>
+  <td>4</td>
+  <td></td>
+  <td>0</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>0</td>
+  <td>2</td>
+  <td></td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>0</td>
+  <td>3</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>0</td>
+  <td>1</td>
+  <td></td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>2</td>
+  <td>16</td>
+  <td>0.111</td>
+  <td>3</td>
+  <td>13</td>
+  <td>0.186</td>
+ </tr>
+</table>
+FME: 0.076
+<br>
+10%棄却域臨界値: &plusmn; 0.200
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>1戦目と2戦目が負けと勝ちのチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で負け</td>
+  <td colspan="3">初戦で勝ち</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>0</td>
+  <td>2</td>
+  <td></td>
+  <td>1</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>0</td>
+  <td>2</td>
+  <td></td>
+  <td>1</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>2</td>
+  <td>0</td>
+  <td></td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>1</td>
+  <td>3</td>
+  <td></td>
+  <td>3</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>2</td>
+  <td>2</td>
+  <td></td>
+  <td>1</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>1</td>
+  <td>2</td>
+  <td></td>
+  <td>1</td>
+  <td>2</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>6</td>
+  <td>11</td>
+  <td>0.353</td>
+  <td>8</td>
+  <td>8</td>
+  <td>0.5</td>
+ </tr>
+</table>
+FME: 0.147
+<br>
+10%棄却域臨界値: &plusmn; 0.283
+</td>
+<td width="50"></td>
+<td>
+<table border=1 align=center>
+ <caption>1戦目と2戦目が引き分けと勝ちのチーム</caption>
+ <tr align=center>
+  <td><br></td>
+  <td colspan="3">初戦で引き分け</td>
+  <td colspan="3">初戦で勝ち</td>
+ </tr>
+ <tr align=center>
+  <td><br></td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+  <td>Advancing</td>
+  <td>Eliminated</td>
+  <td>AR</td>
+ </tr>
+ <tr align=center>
+  <td>1998</td>
+  <td>2</td>
+  <td>0</td>
+  <td></td>
+  <td>4</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2002</td>
+  <td>3</td>
+  <td>2</td>
+  <td></td>
+  <td>5</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2006</td>
+  <td>2</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2010</td>
+  <td>4</td>
+  <td>0</td>
+  <td></td>
+  <td>1</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2014</td>
+  <td>1</td>
+  <td>0</td>
+  <td></td>
+  <td>4</td>
+  <td>0</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>2018</td>
+  <td>4</td>
+  <td>0</td>
+  <td></td>
+  <td>2</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>total</td>
+  <td>16</td>
+  <td>2</td>
+  <td>0.889</td>
+  <td>18</td>
+  <td>4</td>
+  <td>0.818</td>
+ </tr>
+</table>
+FME: -0.071
+<br>
+10%棄却域臨界値: &plusmn; 0.187
+</td>
+</tr>
+</table>
+
+
+<h3>回帰分析</H3>
+上記の分析は相変わらず観察数が余り確保されているものではなく別の分析方法は考えられないかということで、とりあえず「回帰して係数を比較する」ということもやってみた。
+具体的には、観察された1998年から2018年までの全てのチーム(32*6=192チーム)を使って、Advancingしたか否かのダミー変数を被説明変数とし、以下のような二つの線形モデルを単純な最小二乗法で回帰分析をする。
+一つ目は
+
+<center>
+Advancing = a + M_1 * b_1 + M_2 * b_2 + M_3 * b_3 + e
+</center>
+
+ただし、M_i (i = 1, 2, 3)はグループステージ第i戦で得た勝点である。二つ目は
+
+<center>
+Attendance = a + ww * b_ww + wd * b_wd + wl * b_wl + dw * b_dw + dd * b_dd + dl * b_dl + lw * b_lw + ld * b_ld + e
+</center>
+
+ただし、wwからldまでの8つ値はそれぞれグループステージ第1戦と第2戦の結果の組み合わせを表したダミー変数である。
+wは勝ち、dは引き分け、lは負けを意味し、例えばwdは「第1戦は勝ち、第2戦は引き分けた」場合に1になり、そうでなければ0である。(llは基準になるため省略。)
+なおそれぞれコントロール変数としてグループダミー(どの大会のどのグループであったか)を入れた場合と入れていない場合と両方を回帰してみた。
+
+<h4>記述統計量</h4>
+
+<table border=1 align=center>
+ <tr align=center>
+  <td>変数</td>
+  <td>観察数</td>
+  <td>平均</td>
+  <td>標準偏差</td>
+  <td>最小</td>
+  <td>最大</td>
+ </tr>
+ <tr align=center>
+  <td>Advancing</td>
+  <td>192</td>
+  <td>0.5</td>
+  <td>0.5013072</td>
+  <td>0</td>
+  <td>1</td>
+  <td></td>
+ </tr>
+ <tr align=center>
+  <td>M_1</td>
+  <td>192</td>
+  <td>1.380208</td>
+  <td>1.328789</td>
+  <td>0</td>
+  <td>3</td>
+ </tr>
+ <tr align=center>
+  <td>M_2</td>
+  <td>192</td>
+  <td>1.364583</td>
+  <td>1.303397</td>
+  <td>0</td>
+  <td>3</td>
+ </tr>
+ <tr align=center>
+  <td>M_3</td>
+  <td>192</td>
+  <td>1.375</td>
+  <td>1.3204</td>
+  <td>0</td>
+  <td>3</td>
+ </tr>
+ <tr align=center>
+  <td>ww</td>
+  <td>192</td>
+  <td>0.1822917</td>
+  <td>0.3870941</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>wd</td>
+  <td>192</td>
+  <td>0.1145833</td>
+  <td>0.3193512 </td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>wl</td>
+  <td>192</td>
+  <td>0.0833333</td>
+  <td>0.277108</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>dw</td>
+  <td>192</td>
+  <td>0.09375</td>
+  <td>0.2922426</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>dd</td>
+  <td>192</td>
+  <td>0.0625</td>
+  <td>0.2426943</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>dl</td>
+  <td>192</td>
+  <td>0.0833333</td>
+  <td>0.277108</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>lw</td>
+  <td>192</td>
+  <td>0.0885417</td>
+  <td>0.2848237</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>ld</td>
+  <td>192</td>
+  <td>0.09375</td>
+  <td>0.2922426</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+ <tr align=center>
+  <td>ll</td>
+  <td>192</td>
+  <td>0.1979167</td>
+  <td>0.3994706</td>
+  <td>0</td>
+  <td>1</td>
+ </tr>
+</table>
+
+
+
+<h4>推計結果</h4>
+最小二乗法による回帰結果は以下の通りである。
+表の数字が推計した係数、カッコ内は標準誤差、***、**、*はそれぞれ1%、5%、10%水準での有意性を示す。
+
+
+<table border=1 align=center>
+ <tr align=center>
+  <td></td>
+  <td>(1)</td>
+  <td>(2)</td>
+  <td>(3)</td>
+  <td>(4)</td>
+ </tr>
+ <tr align=center>
+  <td>M_1</td>
+  <td>0.175697***<br>(0.0168822)</td>
+  <td>0.1777985***<br>(0.019453)</td>
+  <td colspan="2"></td>
+ </tr>
+ <tr align=center>
+  <td>M_2</td>
+  <td>0.1569053***<br>(0.0171276)</td>
+  <td>0.1580895***<br>(0.0197444)</td>
+  <td colspan="2"></td>
+ </tr>
+ <tr align=center>
+  <td>M_3</td>
+  <td>0.1324139***<br>(0.0164326)</td>
+  <td>0.1339141***<br>(0.0189189)</td>
+  <td colspan="2"></td>
+ </tr>
+ <tr align=center>
+  <td>ww</td>
+  <td colspan="2"></td>
+  <td>1***<br>(0.0770912)</td>
+  <td>0.9667023***<br>(0.091194)</td>
+ </tr>
+ <tr align=center>
+  <td>wd</td>
+  <td colspan="2"></td>
+  <td>0.8181818***<br>(0.0881541)</td>
+  <td>0.8099535***<br>(0.1199835)</td>
+ </tr>
+ <tr align=center>
+  <td>wl</td>
+  <td colspan="2"></td>
+  <td>0.5***<br>(0.0980651)</td>
+  <td>0.4684314***<br>(0.1237471)</td>
+ </tr>
+ <tr align=center>
+  <td>dw</td>
+  <td colspan="2"></td>
+  <td>0.8888889***<br>(0.09415321)</td>
+  <td>1.003028***<br>(0.1276838)</td>
+ </tr>
+ <tr align=center>
+  <td>dd</td>
+  <td colspan="2"></td>
+  <td>0.6666667***<br>(0.1089612)</td>
+  <td>0.80204***<br>(0.1569357)</td>
+ </tr>
+ <tr align=center>
+  <td>dl</td>
+  <td colspan="2"></td>
+  <td>0.1875*<br>(0.0980651)</td>
+  <td>0.2079794<br>(0.1387723)</td>
+ </tr>
+ <tr align=center>
+  <td>lw</td>
+  <td colspan="2"></td>
+  <td>0.3529412***<br>(0.096014)</td>
+  <td>0.2902049**<br>(0.1209014)</td>
+ </tr>
+ <tr align=center>
+  <td>ld</td>
+  <td colspan="2"></td>
+  <td>0.1111111<br>(0.0941532)</td>
+  <td>0.0674987<br>(0.1322202)</td>
+ </tr>
+ <tr align=center>
+  <td>定数</td>
+  <td>-0.1386781***<br>(0.0407113)</td>
+  <td>-0.1158039<br>(0.1750567)</td>
+  <td>0.0000000<br>(0.0533799)</td>
+  <td> -0.1055039<br>(0.2175125)</td>
+ </tr>
+ <tr align=center>
+  <td>グループダミー</td>
+  <td>無し</td>
+  <td>有り</td>
+  <td>無し</td>
+  <td>有り</td>
+ </tr>
+ <tr align=center>
+  <td>観察数</td>
+  <td colspan="4">192</td>
+ </tr>
+ <tr align=center>
+  <td>決定係数</td>
+  <td>0.6522</td>
+  <td>0.6589</td>
+  <td>0.5872</td>
+  <td>0.6036</td>
+ </tr>
+</table>
+
+<br>
+M_iで回帰した(1)(2)を見てみると、どの係数b_iも正で有意であるが、これは勝点が高いほどAdvancingしやすいという当たり前の結果を捉えている。重要なのはこれらの係数の差であるが、大小を比較してみると第1戦よりも第2戦、第2戦よりも第3戦の方が係数が小さくなっており、ぱっと見る限り最初の試合の方が影響が大きそうにも見える。第1戦と第2戦の組み合わせで回帰した(3)(4)を見ると、軒並み係数は正になっているが、これは第1戦と第2戦がともに負けという最悪な場合と比較してどれほどAdvancingする割合が増えるかということを捉えたものになっているのでこれまた当たり前の結果である。重要なのは第1戦と第2戦の結果をひっくり返したものの比較であるが、これはぱっと見でもなんとも微妙である。まず勝ちと引き分けの組での比較(つまりb_wdとb_dwの比較)だと、コントロールを入れる入れないを問わずb_dw、つまり初戦の結果が悪かった方が係数は大きくなっている。一方で負けが絡んだ結果の比較(b_wlとb_lw、およびb_dlとb_ld)だと最初の結果が良い方が係数は大きくなっている。
+
+で、これらの係数に本当に差があるのかどうかについて、以下の仮説のWald検定で確認してみた。それが以下の通りである。
+
+<table border=1 align=center>
+ <tr align=center>
+  <td></td>
+  <td colspan="4">検定の有意水準</td>
+ </tr>
+ <tr align=center>
+  <td>帰無仮説</td>
+  <td>(1)</td>
+  <td>(2)</td>
+  <td>(3)</td>
+  <td>(4)</td>
+ </tr>
+ <tr align=center>
+  <td>b_1 = b_2</td>
+  <td>0.4863</td>
+  <td>0.5272</td>
+  <td colspan="2"></td>
+ </tr>
+ <tr align=center>
+  <td>b_1 = b_3</td>
+  <td>0.0815</td>
+  <td>0.1252</td>
+  <td colspan="2"></td>
+ </tr>
+ <tr align=center>
+  <td>b_1 = b_2かつb_1 = b_3</td>
+  <td>0.2042</td>
+  <td>0.2939</td>
+  <td colspan="2"></td>
+ </tr>
+ <tr align=center>
+  <td>b_wd = b_dw</td>
+  <td colspan="2"></td>
+  <td>0.4998</td>
+  <td>0.2056</td>
+ </tr>
+ <tr align=center>
+  <td>b_wl = b_lw</td>
+  <td colspan="2"></td>
+  <td>0.2011</td>
+  <td>0.2016</td>
+ </tr>
+ <tr align=center>
+  <td>b_dl = b_ld</td>
+  <td colspan="2"></td>
+  <td>0.5001</td>
+  <td>0.3929</td>
+ </tr>
+ <tr align=center>
+  <td>b_wd = b_dwかつb_wl = b_dlかつb_dl = b_ld</td>
+  <td colspan="2"></td>
+  <td>0.4665</td>
+  <td>0.3339</td>
+ </tr>
+</table>
+
+<br>
+この検定の有意水準からわかることは、<b>どの帰無仮説も5%水準では棄却できず、(1)における帰無仮説b_1 = b_3以外は10%水準でも棄却できない</b>。つまり統計的に「係数が同じである」ことを否定できないということになる。
+
+
+<h3>終わりに</h3>
+ここでやっている検定結果はあくまで「『ARDが0である可能性がほとんどない』あるいは『係数が同じである可能性がほとんどない』ことを確かめようとしたらそうでもなかった」ことを示しただけなので、「ARDが正である」「係数が異なる」と結論付けるのも早計であり、
+せいぜい「ARDが0である可能性を否定できない」「係数が同じである可能性を否定できない」くらいの意味で捉えておくべきである。
+本来は「ARDが正である」「係数が異なる」ことを帰無仮説にする不等式制約の検定を行うべきであり、実際にその方法はあるようで少し調べてみたのだが、
+やってみようとするとそこそこめんどくさそうだったので、とりあえずあきらめてしまった。簡単にできる方法をご存知の方はご教示いただけると大変ありがたい。
+
+<h3>余談</h3>
+前回同様、今回も日本のいたグループには初戦で負けたにもかかわらずAdvancingしたチーム(コロンビア)と初戦で勝ったにもかかわらず(どっかの時間稼ぎのおかげで)Eliminatedしたチーム(セネガル)がいる。(初戦で勝ったにも関らずEliminatedされたチームとしてあとイランとセルビアがある。)また、今大会コロンビアは初戦の理不尽なハンディキャップのお陰で32チーム制になってから初めて「Pot1ではない相手に初戦で負けたもののAdvancingしたPot1ではないチーム」となった。
+
+<br>
+「どっかの時間稼ぎ」に関しては<a href="WCFPP.html">こちら</a>を参照。
+
+
+
+</div>
+
+<hr>
+
+</div>
+
+<div id="FOOTER">
+</div>
+
+</div>
+
+</body>
+</html>
