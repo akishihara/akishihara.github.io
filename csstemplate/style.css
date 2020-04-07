@@ -4,7 +4,8 @@
 /* Copyright (c) 2006 WebDesignTemplates[http://wdt.pekori.jp] All rights reserved. */
 
 /* default */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{font-family: 'Lato', sans-serif;margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 fieldset,img{border:0;}
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
@@ -14,16 +15,17 @@ h1,h2,h3,h4,h5,h6{font-size:100%;}
 q:before,q:after{content:'';}
 /* fonts(Yahoo UI) */
 body {
-	font: 13px arial,helvetica,clean,sans-serif;
+	font: 13px;
 	*font-size:normal;
 	*font:x-small;
+  letter-spacing: 0.01em
 }
 table {
 	font-size: inherit;
 	font: 100%;
 }
 select,input,textarea {
-	font: 99% 'Lato', arial,helvetica,clean,sans-serif;
+	font: 99%;
 }
 
 /* Total Design */
@@ -66,8 +68,8 @@ div#HEADER {
 }
 h1 {
 	padding: 0.3em 1em 0.3em 21px;
-	font-size: 167%;
-	letter-spacing: 0.2em;
+	font-size: 220%;
+	letter-spacing: 0.1em;
 	color: #E0E0E0; /* #9A4414; */
 }
 
@@ -101,7 +103,7 @@ div#MENU {
 	margin: 0 20px 1em 20px;
 	padding: 0.2em 10px;
 	border: none;
-	font-size: 107%;
+	font-size: 120%;
 	letter-spacing: 0.2em;
 }
 #MENU ul{
@@ -140,8 +142,8 @@ div#Article {
 	padding: 0.3em 0;
 	border-bottom: solid 1px #CCCCCA;
 	color: #D0D0AA;  /* #BA7464; */
-	font-size: 122%;
-	letter-spacing: 0.2em;
+	font-size: 140%;
+	letter-spacing: 0.15em;
 }
 div.text {
 	margin: 0.5em 2.5em 1.5em 0;
@@ -153,14 +155,15 @@ div.text {
 
 #Article h3 {
 	padding: 0.6em 0 0.4em 0;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.12em;
+	font-size: 105%;
 	color: #FFFFAA;  /* #BA7464; */
 }
 
 
 h3 {
 	padding: 0.6em 0 0.4em 0;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.12em;
 }
 h4 {
 	padding: 0.5em 0 0.2em 0;
@@ -278,7 +281,6 @@ pre {
 	padding: 0.3em;
 	border: solid 1px #DADADC;
 	font-size: 92%;
-	font-family: monospace;
 }
 
 /* FontModification */
