@@ -18,7 +18,8 @@ body {
 	font: 13px;
 	*font-size:normal;
 	*font:x-small;
-  letter-spacing: 0.01em
+  letter-spacing: 0.01em;
+/*	margin-top: 20px; */
 }
 table {
 	font-size: inherit;
@@ -39,6 +40,7 @@ body#INDEX {
 	background-color: #108080;
 }
 div#PAGETOP {
+	padding-top: 20px;
 	width: 100%;
 	font-size: 100%;
 	color: #E0E0E0; /* #454341; */
@@ -62,8 +64,8 @@ a:active {
 /* Header */
 div#HEADER {
 	margin-bottom: 20px;
-	border-top: solid 4px #595956;
-	border-bottom: double 3px #FFFFFF;
+/*	border-top: solid 4px #595956;
+	border-bottom: double 3px #FFFFFF; */
 	background: #108080; /* #DCDCDA; */
 }
 h1 {
@@ -132,11 +134,21 @@ div#MENU {
 	text-decoration: none;
 }
 
+#LEFTCOLUMN {
+	width: 48%;
+	float: left;
+}
+
+#RIGHTCOLUMN {
+	width: 48%;
+	float: right;
+}
+
 /* Mainbody */
 div#Article {
-	margin: 0 20px 0 210px;
-	padding: 0 0 0 20px;
-	border-left: solid 10px #FBFBFA;
+	margin: 0 10px 0 10px;
+	padding: 0 150px 0 150px;
+/*	border-left: solid 3px #FBFBFA; */
 }
 #Article h2 {
 	padding: 0.3em 0;
@@ -204,10 +216,11 @@ dd {
 /* Footer */
 div#FOOTER {
 	width: 100%;
-	clear: left;
+	clear: both;
 	text-align: right;
 	margin-top: 20px;
-	border-top: double 3px #FFFFFF;
+	margin-bottom: 20px;
+	border-top: double 3px #FFFFFF; 	*/
 	border-bottom: solid 6px #595956;
 	background: #008040; /* #DCDCDA; */
 }
@@ -289,3 +302,43 @@ i { font-style: italic; } /* italic */
 big { font-size: 107%; } /* bid */
 small { font-size: 85%; } /* small */
 tt { font-family: monospace; } /* monospace */
+
+body{
+    background: #81bcd8;
+}
+
+.site-header{
+		background: #086060;
+/*    background: #108080; */
+    display: flex;
+/*		margin: 0 20px 0 10px;
+		padding: 0 20px 0 20px;*/
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+/*		height: 5%; */
+		font-size: 120%;
+		color: #FFFFFF;
+}
+.site-header h2{
+		padding: 5pt;
+		letter-spacing: .1em;
+}
+.site-logo img{
+    height: 20px;
+    width: auto;
+		padding: 5pt 20px 5pt 20px;
+}
+.gnav__menu{
+    display: flex;
+/*		padding-bottom: 5px; */
+		padding: 5pt 20px 5pt 20px;
+}
+.gnav__menu__item{
+    margin: 0 10px 0 10px;
+}
+.gnav__menu__item a{
+    color: #FFFFFF;
+    text-decoration: none;
+		border-bottom: dotted 2px #FBFBFA;
+}
