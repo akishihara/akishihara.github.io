@@ -1,0 +1,35 @@
+Host: 1 if it was the host team  (France in 1998, Japan and Korea Republic in 2002, Germany in 2006, South Africa in 2010, Brazil in 2014, Russia in 2018, and Qatar in 2022; 0 otherwise.
+
+DefendingChampion: 1 if it was the defending champion with automatic qualification (Brazil in 1998 and France in 2002); 0 otherwise. 
+
+FIFA ranking: Data from FIFA website
+1998: ranking on 20th May 1998 
+2002: ranking on 20th May 2002 
+2006: ranking on 17th May 2006 
+2010: ranking on 26th May 2010 
+2014: ranking on 5th June 2014 
+2018: ranking on 7th June 2018 
+2022: ranking on 6th October 2022 
+
+Pot1: 1 if it was one of the 8 seeded teams; 0 otherwise.
+
+Points: Total winning points obtained in the group stage.
+
+Result: 
+1 if it became the champion in the tournament;
+2 if it became the runners-up in the tournament;
+3 if it became the third place in the tournament;
+4 if it became the fouth place in the tournament;
+8 if it was defeated at the quater finals in the tournament;
+16 if it was defeated at the round of 16 in the tournament;
+32 if it was eliminated at the group stage in the tournament.
+
+Advanced: 1 if it advanced to the knowckout stage; 0 otherwise.
+
+iMOpponent (i=1, 2, 3): the opponent in the ith match of the group stage.
+
+iM_Points (i=1, 2, 3):	the winning points obtained in the ith match of the group stage.
+
+iM_RankDif (i=1, 2, 3):	the difference in the fifa ranking from the opponent in the ith match (positive if the opponent is ranked lower; negative if the opponent is ranked higher).
+
+iM_AgP1 (i=1, 2, 3): 1 if the opponent in the ith match was seeded (Pot 1 or A team); 0 otherwise.
